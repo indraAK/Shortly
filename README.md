@@ -4,8 +4,8 @@ Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://
 
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
-
+## Fitur 👋
+- Memiliki tampilan web yang responsive di semua device.
 Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
