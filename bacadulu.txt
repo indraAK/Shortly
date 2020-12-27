@@ -1,0 +1,8 @@
+[+] Menggunakan API dari https://app.shrtco.de/ untuk melakukan http request (memendekan url + mendapatkan url yg telah di shortener) 
+
+// Pengguna harus bisa :
+- Tampilan layout web yang optimal / Responsive
+- Persingkat URL apa pun yang valid
+- Lihat daftar tautan / url yang telah di singkat, bahkan setelah browser di refresh
+- Salin tautan yang telah dipersingkat ke papan klip dengan sekali klik
+- Menampilkan pesan kesalahan ketika form yang submit kolom input urlnya kosong
