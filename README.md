@@ -11,7 +11,6 @@ Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://
 - Salin tautan / link yang telah dipendekan ke papan klip dengan sekali klik
 - Menampilkan pesan kesalahan ketika user mencoba untuk memendekan url dengan menekan tombol Shorten It!, tetapi kolom input urlnya kosong / url yang diinputkan tidak valid
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
