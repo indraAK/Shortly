@@ -11,12 +11,14 @@ Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://
 - Salin tautan / link yang telah dipendekan ke papan klip dengan sekali klik
 - Menampilkan pesan kesalahan ketika user mencoba untuk memendekan url dengan menekan tombol Shorten It!, tetapi kolom input urlnya kosong / url yang diinputkan tidak valid
 
-
 ## Di buat dengan menggunakan
 - HTML
 - CSS
 - JavaScript
 - API dari [shrtcode](https://app.shrtco.de/)
+
+## Demo website
+untuk demo webnya bisa langsung [klik disini](https://admiring-goldberg-07f2b5.netlify.app/)
 
 
 
