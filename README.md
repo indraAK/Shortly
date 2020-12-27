@@ -5,8 +5,11 @@ Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
 ## Fitur 👋
-- Memiliki tampilan web yang responsive di semua device.
-Thanks for checking out this front-end coding challenge.
+- Memiliki tampilan web yang responsive di semua device
+- Shorten / memendekan URL apa pun yang valid
+- Melihat daftar tautan / link yang telah dipendekan
+- Salin tautan / link yang telah dipendekan ke papan klip dengan sekali klik
+- Menampilkan pesan kesalahan ketika user mencoba untuk memendekan url dengan menekan tombol Shorten It!, tetapi kolom input urlnya kosong / url yang diinputkan tidak valid
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
