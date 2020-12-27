@@ -40,11 +40,11 @@ function removeErrorMessage(element) {
 function isValidUrl(url) {
    // url pattern
    const pattern = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
-
+   // return true jika urlnya valid & false jika urlnya tidak valid
    return new RegExp(pattern).test(url.toLowerCase());
 }
 
-// fungsi untuk mengambil url yang telah dipersingkat
+// fungsi untuk mengambil link yang telah dipendekan ke web API
 async function fetchShortenUrl(url) {
    try {
       const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
@@ -61,7 +61,7 @@ async function fetchShortenUrl(url) {
    }
 }
 
-// fungsi untuk menampilkan data links yang telah dishorten ke DOM HTML
+// fungsi untuk menampilkan data links yang telah dipendekan ke DOM HTML
 function setLinksIntoDOM(links) {
    const { original_link, short_link, short_link2, short_link3 } = links;
    const allShortLinks = [short_link, short_link2, short_link3];
@@ -84,7 +84,7 @@ function setLinksIntoDOM(links) {
    `;
 }
 
-// copy link to clipboard
+// fungsi untuk menyalink link yang telah dipendekan ke papan klip
 function copyLinkToClipboard(link, button) {
    // reset semua btn-copy ke setelan awal
    document.querySelectorAll('.btn-copy').forEach(btn => {
@@ -105,12 +105,13 @@ function copyLinkToClipboard(link, button) {
    }
 }
 
-// fungsi untuk menampilkan animasi loading
+// fungsi untuk menampilkan animasi loading pada button
 function showLoading(element) {
    element.disabled = true;
    element.classList.add('loading');
 }
 
+// fungsi untuk menghapus / menyembunyikan animasi loading pada button
 function removeLoading(element) {
    element.disabled = false;
    element.classList.remove('loading');
@@ -143,14 +144,14 @@ function shortenUrl(e) {
          // url valid
          // hapus pesan kesalahan
          removeErrorMessage(this['url']);
-         // tampilkan loading animasi pada button
+         // tampilkan animasi loading pada button
          showLoading(this['shortenBtn']);
          // get shorten url
          fetchShortenUrl(urlValue)
             .then(links => {
-               // setel data links yg telah di shorten ke DOM HTML
+               // setel data links yg telah dipendekan ke DOM HTML
                setLinksIntoDOM(links);
-               // hapus loading animasi pada button
+               // hapus animasi loading pada button
                removeLoading(this['shortenBtn']);
             });
       }
