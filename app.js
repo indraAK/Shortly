@@ -1,4 +1,3 @@
-// selectors
 const toggleBtn = document.getElementById('toggleBtn');
 const formSubmit = document.getElementById('formSubmit');
 
