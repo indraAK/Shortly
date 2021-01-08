@@ -846,7 +846,7 @@ footer {
 
 @media screen and (max-width: 320px) {
    .shortlink-card .original-link {
-      max-width: 23rem;
+      max-width: 22rem;
       font-size: 1.3rem;
    }
 }
