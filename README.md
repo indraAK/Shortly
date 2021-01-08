@@ -1,6 +1,6 @@
 # Shortly
 
-Shortly merupakan sebuah aplikasi web sederhana untuk memendekan url.
+Shortly merupakan sebuah website sederhana untuk memendekan url.
 Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://www.frontendmentor.io)
 
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)

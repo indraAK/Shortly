@@ -54,7 +54,6 @@ async function fetchShortenUrl(url) {
       }
 
       const dataUrl = await response.json();
-      console.log(dataUrl);
       return dataUrl.result;
    } catch (error) {
       console.log(error.message);

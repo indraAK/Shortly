@@ -431,6 +431,23 @@ main {
    color: var(--dark-blue);
    font-weight: 500;
    font-size: 1.6rem;
+   white-space: nowrap;
+   max-width: 57.6rem;
+   overflow-x: auto;
+}
+
+.shortlink-card .original-link::-webkit-scrollbar {
+   height: 4px;
+}
+
+.shortlink-card .original-link::-webkit-scrollbar-track {
+   background-color: #ddd;
+   border-radius: 50px;
+}
+
+.shortlink-card .original-link::-webkit-scrollbar-thumb {
+   background-color: var(--cyan);
+   border-radius: 50px;
 }
 
 .shortlink-card .shortlink-detail {
@@ -636,6 +653,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+   .shortlink-card .original-link {
+      max-width: 30rem;
+   }
+
    .hero-section .title {
       font-size: 4rem;
    }
@@ -718,8 +739,12 @@ footer {
 
    .shortlink-card .shortlink-header {
       width: 100%;
-      border-bottom: 1px solid var(--gray);
+      border-bottom: 1px solid #ebebeb;
       padding: 1rem 2rem;
+   }
+
+   .shortlink-card .original-link {
+      max-width: 40rem;
    }
 
    .shortlink-card .shortlink-detail {
@@ -812,5 +837,16 @@ footer {
 
    .shortlink-list {
       margin-top: -8rem;
+   }
+
+   .shortlink-card .original-link {
+      max-width: 28rem;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .shortlink-card .original-link {
+      max-width: 23rem;
+      font-size: 1.3rem;
    }
 }
