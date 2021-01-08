@@ -22,4 +22,4 @@ Dibuat untuk menyelesaikan challenge / tantangan dari [Frontend Mentor](https://
 
 ## Demo website
 
-untuk demo webnya bisa langsung [klik disini](https://admiring-goldberg-07f2b5.netlify.app/)
+Untuk demo webnya bisa langsung [klik disini](https://admiring-goldberg-07f2b5.netlify.app/)
